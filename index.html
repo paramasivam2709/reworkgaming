@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackly GAMING - Your Future Ultimate Gaming World</title>
+  <meta name="description" content="Stackly GAMING - A game studio crafting exciting, high-quality video games with immersive gameplay and mechanics.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+  <!-- Particles Background -->
+  <div class="particles-container">
+    <canvas id="particles-canvas"></canvas>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="logo">
+      <img src="images/logo_green.png" alt="Stackly Logo" class="logo-img">
+      <span class="logo-text">Stackly</span>
+      </a>
+      
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="pages/about.html" class="nav-link">About Us</a></li>
+        <li><a href="pages/match.html" class="nav-link">Matches</a></li>
+        <li><a href="pages/service.html" class="nav-link">Services</a></li>
+        <li><a href="pages/blog.html" class="nav-link">Blog</a></li>
+        <li><a href="pages/contact.html" class="nav-link">Contact Us</a></li>
+      </ul>
+      
+      <div class="nav-actions">
+        <a href="pages/login.html" class="btn btn-outline btn-sm">Login</a>
+        <button class="mobile-menu-btn" id="mobile-menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-glow"></div>
+      
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <p class="hero-subtitle reveal stagger-1">Your Future Ultimate Gaming World..</p>
+            <h1 class="hero-title reveal stagger-2">
+              <span class="text-gradient">GAMING VIBE</span><br>
+              <span class="neon-text">LEGENDS</span>
+            </h1>
+            <p class="hero-desc reveal stagger-3">
+              A game studio crafting exciting, high-quality video games, prioritizing immersive gameplay and mechanics.
+            </p>
+            <div class="hero-buttons reveal stagger-4">
+              <a href="#about" class="btn btn-primary btn-lg">
+                Know More <i class="fas fa-arrow-right"></i>
+              </a>
+              <a href="pages/match.html" class="btn btn-outline btn-lg">
+                View Matches
+              </a>
+            </div>
+          </div>
+          
+          <div class="hero-image reveal-scale stagger-3">
+            <div class="hero-image-wrapper">
+              <img src="images/hero-gamer.png" alt="Gaming Pro" class="hero-img">
+              <div class="hero-controller">
+                <img src="images/controller.png" alt="Controller" class="controller-img animate-float">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Floating Elements -->
+      <div class="floating-elements">
+        <div class="float-item float-1"><i class="fas fa-gamepad"></i></div>
+        <div class="float-item float-2"><i class="fas fa-trophy"></i></div>
+        <div class="float-item float-3"><i class="fas fa-bolt"></i></div>
+        <div class="float-item float-4"><i class="fas fa-star"></i></div>
+      </div>
+    </section>
+
+    <!-- Team Logos Section -->
+    <section class="team-logos">
+      <div class="container">
+        <div class="logos-track">
+          <div class="logo-item"><img src="images/team-1.png" alt="Team 1"></div>
+          <div class="logo-item"><img src="images/team-2.png" alt="Team 2"></div>
+          <div class="logo-item"><img src="images/team-3.png" alt="Team 3"></div>
+          <div class="logo-item"><img src="images/team-4.png" alt="Team 4"></div>
+          <div class="logo-item"><img src="images/team-5.png" alt="Team 5"></div>
+          <div class="logo-item"><img src="images/team-6.png" alt="Team 6"></div>
+          <div class="logo-item"><img src="images/team-7.png" alt="Team 7"></div>
+          <!-- Duplicate for infinite scroll -->
+          <div class="logo-item"><img src="images/team-1.png" alt="Team 1"></div>
+          <div class="logo-item"><img src="images/team-2.png" alt="Team 2"></div>
+          <div class="logo-item"><img src="images/team-3.png" alt="Team 3"></div>
+          <div class="logo-item"><img src="images/team-4.png" alt="Team 4"></div>
+          <div class="logo-item"><img src="images/team-5.png" alt="Team 5"></div>
+          <div class="logo-item"><img src="images/team-6.png" alt="Team 6"></div>
+          <div class="logo-item"><img src="images/team-7.png" alt="Team 7"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-images reveal-left">
+            <div class="about-image-main">
+              <img src="images/gaming-zone.jpg" alt="Gaming Zone">
+              <div class="gaming-zone-badge">
+                <span class="badge-text">Gaming</span>
+                <span class="badge-text-accent">Zone</span>
+              </div>
+            </div>
+            <div class="about-image-secondary">
+              <img src="images/gaming-setup.jpg" alt="Gaming Setup">
+            </div>
+            <div class="about-decoration">
+              <div class="decoration-circle"></div>
+              <div class="decoration-line"></div>
+            </div>
+          </div>
+          
+          <div class="about-content reveal-right">
+            <p class="section-subtitle">About Our Gaming Zone</p>
+            <h2 class="section-title">
+              More Than Just A<br>
+              <span class="text-gradient">Game We Design</span> The<br>
+              Moments That <span class="highlight">Matter</span>
+            </h2>
+            <p class="about-desc">
+              Emerging trends in the esports industry include the growth of mobile esports, the integration of virtual reality in gaming experiences, and the increasing involvement of traditional sports.
+            </p>
+            
+            <div class="stats-grid">
+              <div class="stat-item reveal-scale stagger-1">
+                <span class="stat-number" data-count="12">0</span><span class="stat-suffix">+</span>
+                <span class="stat-label">Game Played</span>
+              </div>
+              <div class="stat-item reveal-scale stagger-2">
+                <span class="stat-number" data-count="7">0</span><span class="stat-suffix">+</span>
+                <span class="stat-label">Flags Taken</span>
+              </div>
+              <div class="stat-item reveal-scale stagger-3">
+                <span class="stat-number" data-count="3">0</span><span class="stat-suffix">+</span>
+                <span class="stat-label">Death Matches</span>
+              </div>
+              <div class="stat-item reveal-scale stagger-4">
+                <span class="stat-number" data-count="4">0</span><span class="stat-suffix">%</span>
+                <span class="stat-label">Winning Game</span>
+              </div>
+            </div>
+            
+            <a href="pages/about.html" class="btn btn-primary">
+              About More Us <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Match Section -->
+    <section class="matches section" id="matches">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-subtitle">Live Matches</p>
+          <h2 class="section-title">Upcoming <span class="text-gradient">Matches</span></h2>
+          <p class="section-desc">Watch the most intense esports battles live</p>
+        </div>
+        
+        <div class="matches-grid">
+          <div class="match-card reveal stagger-1">
+            <div class="match-header">
+              <span class="match-type">Final Match</span>
+              <span class="match-live"><i class="fas fa-circle"></i> LIVE</span>
+            </div>
+            <div class="match-teams">
+              <div class="team">
+                <img src="images/team-1.png" alt="Team Alpha" class="team-logo">
+                <span class="team-name">Team Alpha</span>
+              </div>
+              <div class="match-vs">
+                <span class="vs-text">VS</span>
+                <span class="match-time">2:30 PM</span>
+              </div>
+              <div class="team">
+                <img src="images/team-2.png" alt="Team Beta" class="team-logo">
+                <span class="team-name">Team Beta</span>
+              </div>
+            </div>
+            <div class="match-footer">
+              <span class="match-game"><i class="fas fa-gamepad"></i> Valorant</span>
+              <a href="pages/match.html" class="match-link">Watch Live <i class="fas fa-play"></i></a>
+            </div>
+          </div>
+          
+          <div class="match-card reveal stagger-2">
+            <div class="match-header">
+              <span class="match-type">Semi Final</span>
+              <span class="match-upcoming">UPCOMING</span>
+            </div>
+            <div class="match-teams">
+              <div class="team">
+                <img src="images/team-3.png" alt="Team Gamma" class="team-logo">
+                <span class="team-name">Team Gamma</span>
+              </div>
+              <div class="match-vs">
+                <span class="vs-text">VS</span>
+                <span class="match-time">Tomorrow</span>
+              </div>
+              <div class="team">
+                <img src="images/team-4.png" alt="Team Delta" class="team-logo">
+                <span class="team-name">Team Delta</span>
+              </div>
+            </div>
+            <div class="match-footer">
+              <span class="match-game"><i class="fas fa-gamepad"></i> CS:GO</span>
+              <a href="pages/match.html" class="match-link">Details <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+          
+          <div class="match-card reveal stagger-3">
+            <div class="match-header">
+              <span class="match-type">Quarter Final</span>
+              <span class="match-upcoming">UPCOMING</span>
+            </div>
+            <div class="match-teams">
+              <div class="team">
+                <img src="images/team-5.png" alt="Team Echo" class="team-logo">
+                <span class="team-name">Team Echo</span>
+              </div>
+              <div class="match-vs">
+                <span class="vs-text">VS</span>
+                <span class="match-time">Mar 15</span>
+              </div>
+              <div class="team">
+                <img src="images/team-6.png" alt="Team Fox" class="team-logo">
+                <span class="team-name">Team Fox</span>
+              </div>
+            </div>
+            <div class="match-footer">
+              <span class="match-game"><i class="fas fa-gamepad"></i> Dota 2</span>
+              <a href="pages/match.html" class="match-link">Details <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="text-center mt-4 reveal">
+          <a href="pages/match.html" class="btn btn-outline btn-lg">View All Matches</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog section" id="blog">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-subtitle">Latest News</p>
+          <h2 class="section-title">Gaming <span class="text-gradient">Blog</span></h2>
+          <p class="section-desc">Stay updated with the latest gaming news and trends</p>
+        </div>
+        
+        <div class="blog-grid">
+          <article class="blog-card reveal stagger-1">
+            <div class="blog-image">
+              <img src="images/blog-1.jpg" alt="Blog 1">
+              <span class="blog-category">Esports</span>
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span><i class="fas fa-calendar"></i> Mar 10, 2026</span>
+                <span><i class="fas fa-user"></i> Admin</span>
+              </div>
+              <h3 class="blog-title">The Rise of Mobile Esports in 2026</h3>
+              <p class="blog-excerpt">Mobile gaming has taken the esports world by storm. Discover how mobile tournaments are reshaping competitive gaming...</p>
+              <a href="pages/blog.html" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+          
+          <article class="blog-card reveal stagger-2">
+            <div class="blog-image">
+              <img src="images/blog-2.jpg" alt="Blog 2">
+              <span class="blog-category">Gaming</span>
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span><i class="fas fa-calendar"></i> Mar 8, 2026</span>
+                <span><i class="fas fa-user"></i> Admin</span>
+              </div>
+              <h3 class="blog-title">Top 10 Gaming Setup Tips for Pro Players</h3>
+              <p class="blog-excerpt">Optimize your gaming environment with these professional tips that can give you the competitive edge...</p>
+              <a href="pages/blog.html" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+          
+          <article class="blog-card reveal stagger-3">
+            <div class="blog-image">
+              <img src="images/blog-3.jpg" alt="Blog 3">
+              <span class="blog-category">Technology</span>
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span><i class="fas fa-calendar"></i> Mar 5, 2026</span>
+                <span><i class="fas fa-user"></i> Admin</span>
+              </div>
+              <h3 class="blog-title">VR Gaming: The Future is Here</h3>
+              <p class="blog-excerpt">Virtual Reality is transforming how we experience games. Explore the latest VR technologies and upcoming releases...</p>
+              <a href="pages/blog.html" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+        
+        <div class="text-center mt-4 reveal">
+          <a href="pages/blog.html" class="btn btn-outline btn-lg">View All Posts</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing section" id="pricing">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-subtitle">Pricing Plans</p>
+          <h2 class="section-title">Choose Your <span class="text-gradient">Plan</span></h2>
+          <p class="section-desc">Select the perfect plan for your gaming journey</p>
+        </div>
+        
+        <div class="pricing-grid">
+          <div class="pricing-card reveal stagger-1">
+            <div class="pricing-header">
+              <h3 class="pricing-name">Starter</h3>
+              <p class="pricing-desc">Perfect for casual gamers</p>
+            </div>
+            <div class="pricing-price">
+              <span class="currency">$</span>
+              <span class="amount">9</span>
+              <span class="period">/month</span>
+            </div>
+            <ul class="pricing-features">
+              <li><i class="fas fa-check"></i> Access to basic tournaments</li>
+              <li><i class="fas fa-check"></i> Community forum access</li>
+              <li><i class="fas fa-check"></i> Monthly gaming guides</li>
+              <li><i class="fas fa-times"></i> Premium match streaming</li>
+              <li><i class="fas fa-times"></i> 1-on-1 coaching</li>
+            </ul>
+            <a href="pages/login.html" class="btn btn-outline btn-lg w-full">Get Started</a>
+          </div>
+          
+          <div class="pricing-card featured reveal stagger-2">
+            <div class="pricing-badge">Most Popular</div>
+            <div class="pricing-header">
+              <h3 class="pricing-name">Pro</h3>
+              <p class="pricing-desc">For serious competitors</p>
+            </div>
+            <div class="pricing-price">
+              <span class="currency">$</span>
+              <span class="amount">29</span>
+              <span class="period">/month</span>
+            </div>
+            <ul class="pricing-features">
+              <li><i class="fas fa-check"></i> All Starter features</li>
+              <li><i class="fas fa-check"></i> Premium match streaming</li>
+              <li><i class="fas fa-check"></i> Weekly coaching sessions</li>
+              <li><i class="fas fa-check"></i> Tournament priority entry</li>
+              <li><i class="fas fa-times"></i> Team management tools</li>
+            </ul>
+            <a href="pages/login.html" class="btn btn-primary btn-lg w-full">Get Started</a>
+          </div>
+          
+          <div class="pricing-card reveal stagger-3">
+            <div class="pricing-header">
+              <h3 class="pricing-name">Elite</h3>
+              <p class="pricing-desc">For professional teams</p>
+            </div>
+            <div class="pricing-price">
+              <span class="currency">$</span>
+              <span class="amount">79</span>
+              <span class="period">/month</span>
+            </div>
+            <ul class="pricing-features">
+              <li><i class="fas fa-check"></i> All Pro features</li>
+              <li><i class="fas fa-check"></i> Team management tools</li>
+              <li><i class="fas fa-check"></i> Unlimited coaching</li>
+              <li><i class="fas fa-check"></i> Sponsorship opportunities</li>
+              <li><i class="fas fa-check"></i> Custom tournament hosting</li>
+            </ul>
+            <a href="pages/login.html" class="btn btn-outline btn-lg w-full">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta section">
+      <div class="container">
+        <div class="cta-content reveal">
+          <h2 class="cta-title">Ready to Join the <span class="text-gradient">Elite</span>?</h2>
+          <p class="cta-desc">Start your gaming journey today and compete with the best players worldwide</p>
+          <div class="cta-buttons">
+            <a href="pages/register.html" class="btn btn-primary btn-lg">Create Account</a>
+            <a href="pages/contact.html" class="btn btn-ghost btn-lg">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">
+          <img src="images/logo_green.png" alt="Stackly Logo" class="logo-img">
+         <span class="logo-text">Stackly</span>
+         </a>
+          <p class="footer-desc">
+            Your ultimate gaming destination. We craft exciting, high-quality gaming experiences for players worldwide.
+          </p>
+          <div class="footer-social">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-column">
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="pages/about.html" class="footer-link">About Us</a></li>
+            <li><a href="pages/match.html" class="footer-link">Matches</a></li>
+            <li><a href="pages/blog.html" class="footer-link">Blog</a></li>
+            <li><a href="pages/contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4 class="footer-title">Services</h4>
+          <ul class="footer-links">
+            <li><a href="pages/service.html" class="footer-link">Tournaments</a></li>
+            <li><a href="pages/service.html" class="footer-link">Coaching</a></li>
+            <li><a href="pages/service.html" class="footer-link">Streaming</a></li>
+            <li><a href="pages/service.html" class="footer-link">Team Management</a></li>
+            <li><a href="pages/service.html" class="footer-link">Sponsorship</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4 class="footer-title">Support</h4>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">Help Center</a></li>
+            <li><a href="#" class="footer-link">FAQs</a></li>
+            <li><a href="#" class="footer-link">Terms of Service</a></li>
+            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+            <li><a href="pages/contact.html" class="footer-link">Support Ticket</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2026 Stackly GAMING. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>

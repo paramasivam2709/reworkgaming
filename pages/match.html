@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matches - Stackly GAMING</title>
+  <meta name="description" content="View all upcoming and live matches on Stackly GAMING.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/pages.css">
+</head>
+<body>
+  <div class="particles-container">
+    <canvas id="particles-canvas"></canvas>
+  </div>
+
+  <nav class="navbar" id="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="logo">
+      <img src="../images/logo_green.png" alt="Stackly Logo" class="logo-img">
+      <span class="logo-text">Stackly</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="match.html" class="nav-link active">Matches</a></li>
+        <li><a href="service.html" class="nav-link">Services</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn-outline btn-sm">Login</a>
+        <button class="mobile-menu-btn" id="mobile-menu-btn">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="page-header">
+      <div class="page-header-bg"></div>
+      <div class="container">
+        <div class="page-header-content reveal">
+          <h1 class="page-title">Live <span class="text-gradient">Matches</span></h1>
+          <nav class="breadcrumb">
+            <a href="../index.html">Home</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>Matches</span>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="matches-filter reveal">
+          <button class="filter-btn active">All Matches</button>
+          <button class="filter-btn">Live Now</button>
+          <button class="filter-btn">Upcoming</button>
+          <button class="filter-btn">Finished</button>
+        </div>
+
+        <div class="matches-list">
+          <div class="match-row reveal stagger-1">
+            <div class="match-team">
+              <img src="../images/team-1.png" alt="Team Alpha" class="match-team-logo">
+              <div class="match-team-info">
+                <h4>Team Alpha</h4>
+                <span>Rank #1</span>
+              </div>
+            </div>
+            <div class="match-center">
+              <div class="match-score">2 - 1</div>
+              <span class="match-status live"><i class="fas fa-circle"></i> LIVE</span>
+            </div>
+            <div class="match-team right">
+              <img src="../images/team-2.png" alt="Team Beta" class="match-team-logo">
+              <div class="match-team-info">
+                <h4>Team Beta</h4>
+                <span>Rank #3</span>
+              </div>
+            </div>
+            <div class="match-actions">
+              <button class="match-action-btn"><i class="fas fa-play"></i></button>
+              <button class="match-action-btn"><i class="fas fa-chart-bar"></i></button>
+            </div>
+          </div>
+
+          <div class="match-row reveal stagger-2">
+            <div class="match-team">
+              <img src="../images/team-3.png" alt="Team Gamma" class="match-team-logo">
+              <div class="match-team-info">
+                <h4>Team Gamma</h4>
+                <span>Rank #2</span>
+              </div>
+            </div>
+            <div class="match-center">
+              <div class="match-score">VS</div>
+              <span class="match-status upcoming">Tomorrow, 3:00 PM</span>
+            </div>
+            <div class="match-team right">
+              <img src="../images/team-4.png" alt="Team Delta" class="match-team-logo">
+              <div class="match-team-info">
+                <h4>Team Delta</h4>
+                <span>Rank #4</span>
+              </div>
+            </div>
+            <div class="match-actions">
+              <button class="match-action-btn"><i class="fas fa-bell"></i></button>
+              <button class="match-action-btn"><i class="fas fa-info"></i></button>
+            </div>
+          </div>
+
+          <div class="match-row reveal stagger-3">
+            <div class="match-team">
+              <img src="../images/team-5.png" alt="Team Echo" class="match-team-logo">
+              <div class="match-team-info">
+                <h4>Team Echo</h4>
+                <span>Rank #5</span>
+              </div>
+            </div>
+            <div class="match-center">
+              <div class="match-score">VS</div>
+              <span class="match-status upcoming">Mar 15, 7:00 PM</span>
+            </div>
+            <div class="match-team right">
+              <img src="../images/team-6.png" alt="Team Fox" class="match-team-logo">
+              <div class="match-team-info">
+                <h4>Team Fox</h4>
+                <span>Rank #7</span>
+              </div>
+            </div>
+            <div class="match-actions">
+              <button class="match-action-btn"><i class="fas fa-bell"></i></button>
+              <button class="match-action-btn"><i class="fas fa-info"></i></button>
+            </div>
+          </div>
+
+          <div class="match-row reveal stagger-1">
+            <div class="match-team">
+              <img src="../images/team-1.png" alt="Team Alpha" class="match-team-logo">
+              <div class="match-team-info">
+                <h4>Team Alpha</h4>
+                <span>Rank #1</span>
+              </div>
+            </div>
+            <div class="match-center">
+              <div class="match-score">3 - 0</div>
+              <span class="match-status finished"><i class="fas fa-check"></i> Finished</span>
+            </div>
+            <div class="match-team right">
+              <img src="../images/team-5.png" alt="Team Echo" class="match-team-logo">
+              <div class="match-team-info">
+                <h4>Team Echo</h4>
+                <span>Rank #5</span>
+              </div>
+            </div>
+            <div class="match-actions">
+              <button class="match-action-btn"><i class="fas fa-play"></i></button>
+              <button class="match-action-btn"><i class="fas fa-chart-bar"></i></button>
+            </div>
+          </div>
+
+          <div class="match-row reveal stagger-2">
+            <div class="match-team">
+              <img src="../images/team-2.png" alt="Team Beta" class="match-team-logo">
+              <div class="match-team-info">
+                <h4>Team Beta</h4>
+                <span>Rank #3</span>
+              </div>
+            </div>
+            <div class="match-center">
+              <div class="match-score">2 - 2</div>
+              <span class="match-status finished"><i class="fas fa-check"></i> Finished</span>
+            </div>
+            <div class="match-team right">
+              <img src="../images/team-3.png" alt="Team Gamma" class="match-team-logo">
+              <div class="match-team-info">
+                <h4>Team Gamma</h4>
+                <span>Rank #2</span>
+              </div>
+            </div>
+            <div class="match-actions">
+              <button class="match-action-btn"><i class="fas fa-play"></i></button>
+              <button class="match-action-btn"><i class="fas fa-chart-bar"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-4 reveal">
+          <button class="btn btn-outline btn-lg">Load More Matches</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background: var(--surface);">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-subtitle">Tournament Bracket</p>
+          <h2 class="section-title">Championship <span class="text-gradient">2026</span></h2>
+        </div>
+
+        <div class="tournament-bracket reveal">
+          <div class="bracket-round">
+            <h4 class="bracket-round-title">Quarter Finals</h4>
+            <div class="bracket-match">
+              <div class="bracket-team">
+                <span class="bracket-team-name">Team Alpha</span>
+                <span class="bracket-team-score">2</span>
+              </div>
+              <div class="bracket-team">
+                <span class="bracket-team-name">Team Echo</span>
+                <span class="bracket-team-score">0</span>
+              </div>
+            </div>
+            <div class="bracket-match">
+              <div class="bracket-team">
+                <span class="bracket-team-name">Team Beta</span>
+                <span class="bracket-team-score">2</span>
+              </div>
+              <div class="bracket-team">
+                <span class="bracket-team-name">Team Gamma</span>
+                <span class="bracket-team-score">1</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bracket-round">
+            <h4 class="bracket-round-title">Semi Finals</h4>
+            <div class="bracket-match">
+              <div class="bracket-team">
+                <span class="bracket-team-name">Team Alpha</span>
+                <span class="bracket-team-score">-</span>
+              </div>
+              <div class="bracket-team">
+                <span class="bracket-team-name">Team Beta</span>
+                <span class="bracket-team-score">-</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bracket-round">
+            <h4 class="bracket-round-title">Final</h4>
+            <div class="bracket-match">
+              <div class="bracket-team">
+                <span class="bracket-team-name">TBD</span>
+                <span class="bracket-team-score">-</span>
+              </div>
+              <div class="bracket-team">
+                <span class="bracket-team-name">TBD</span>
+                <span class="bracket-team-score">-</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="footer-logo">
+          <img src="../images/logo_green.png" alt="Stackly Logo" class="logo-img">
+         <span class="logo-text">Stackly</span>
+         </a>
+          <p class="footer-desc">Your ultimate gaming destination. We craft exciting, high-quality gaming experiences for players worldwide.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="match.html" class="footer-link">Matches</a></li>
+            <li><a href="blog.html" class="footer-link">Blog</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-title">Services</h4>
+          <ul class="footer-links">
+            <li><a href="service.html" class="footer-link">Tournaments</a></li>
+            <li><a href="service.html" class="footer-link">Coaching</a></li>
+            <li><a href="service.html" class="footer-link">Streaming</a></li>
+            <li><a href="service.html" class="footer-link">Team Management</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-title">Support</h4>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">Help Center</a></li>
+            <li><a href="#" class="footer-link">FAQs</a></li>
+            <li><a href="#" class="footer-link">Terms of Service</a></li>
+            <li><a href="contact.html" class="footer-link">Support Ticket</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2026 Stackly GAMING. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/particles.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/animations.js"></script>
+</body>
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Stackly GAMING</title>
+  <meta name="description" content="Learn more about Stackly GAMING - Your ultimate gaming destination.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/pages.css">
+</head>
+<body>
+  <!-- Particles Background -->
+  <div class="particles-container">
+    <canvas id="particles-canvas"></canvas>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-container">
+      <a href="../index.html" class="logo">
+      <img src="../images/logo_green.png" alt="Stackly Logo" class="logo-img">
+      <span class="logo-text">Stackly</span>
+      </a>
+      
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link active">About Us</a></li>
+        <li><a href="match.html" class="nav-link">Matches</a></li>
+        <li><a href="service.html" class="nav-link">Services</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+      </ul>
+      
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn-outline btn-sm">Login</a>
+        <button class="mobile-menu-btn" id="mobile-menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="page-header-bg"></div>
+      <div class="container">
+        <div class="page-header-content reveal">
+          <h1 class="page-title">About <span class="text-gradient">Us</span></h1>
+          <nav class="breadcrumb">
+            <a href="../index.html">Home</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>About Us</span>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Story Section -->
+    <section class="about-story section">
+      <div class="container">
+        <div class="about-story-grid">
+          <div class="about-story-image reveal-left">
+            <div class="image-frame">
+              <img src="../images/about-story.jpg" alt="Our Story">
+              <div class="experience-badge">
+                <span class="exp-number">10+</span>
+                <span class="exp-text">Years of<br>Excellence</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-story-content reveal-right">
+            <p class="section-subtitle">Our Story</p>
+            <h2 class="section-title">We Are The Leading<br><span class="text-gradient">Esports Platform</span></h2>
+            <p class="story-text">
+              Founded in 2016, Stackly GAMING has grown from a small gaming community to one of the world's leading esports platforms. Our mission is to provide gamers with the ultimate competitive experience.
+            </p>
+            <p class="story-text">
+              We believe in the power of gaming to bring people together, create unforgettable moments, and push the boundaries of what's possible in competitive entertainment.
+            </p>
+            
+            <div class="story-features">
+              <div class="story-feature">
+                <div class="feature-icon">
+                  <i class="fas fa-trophy"></i>
+                </div>
+                <div class="feature-text">
+                  <h4>Championship Tournaments</h4>
+                  <p>Host and participate in world-class competitions</p>
+                </div>
+              </div>
+              <div class="story-feature">
+                <div class="feature-icon">
+                  <i class="fas fa-users"></i>
+                </div>
+                <div class="feature-text">
+                  <h4>Global Community</h4>
+                  <p>Connect with millions of gamers worldwide</p>
+                </div>
+              </div>
+              <div class="story-feature">
+                <div class="feature-icon">
+                  <i class="fas fa-rocket"></i>
+                </div>
+                <div class="feature-text">
+                  <h4>Innovation First</h4>
+                  <p>Pioneering new technologies in esports</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="about-stats section">
+      <div class="container">
+        <div class="stats-row">
+          <div class="stat-box reveal stagger-1">
+            <div class="stat-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="stat-info">
+              <span class="stat-value" data-count="500">0</span><span class="stat-suffix">K+</span>
+              <span class="stat-label">Active Players</span>
+            </div>
+          </div>
+          <div class="stat-box reveal stagger-2">
+            <div class="stat-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <div class="stat-info">
+              <span class="stat-value" data-count="1200">0</span><span class="stat-suffix">+</span>
+              <span class="stat-label">Tournaments</span>
+            </div>
+          </div>
+          <div class="stat-box reveal stagger-3">
+            <div class="stat-icon">
+              <i class="fas fa-gamepad"></i>
+            </div>
+            <div class="stat-info">
+              <span class="stat-value" data-count="50">0</span><span class="stat-suffix">+</span>
+              <span class="stat-label">Games Supported</span>
+            </div>
+          </div>
+          <div class="stat-box reveal stagger-4">
+            <div class="stat-icon">
+              <i class="fas fa-globe"></i>
+            </div>
+            <div class="stat-info">
+              <span class="stat-value" data-count="80">0</span><span class="stat-suffix">+</span>
+              <span class="stat-label">Countries</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team section">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-subtitle">Our Team</p>
+          <h2 class="section-title">Meet The <span class="text-gradient">Legends</span></h2>
+          <p class="section-desc">The passionate people behind Stackly GAMING</p>
+        </div>
+        
+        <div class="team-grid">
+          <div class="team-card reveal stagger-1">
+            <div class="team-image">
+              <img src="../images/team-1.jpg" alt="Team Member">
+              <div class="team-social">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+            <div class="team-info">
+              <h3 class="team-name">Alex Chen</h3>
+              <span class="team-role">Founder & CEO</span>
+            </div>
+          </div>
+          
+          <div class="team-card reveal stagger-2">
+            <div class="team-image">
+              <img src="../images/team-2.jpg" alt="Team Member">
+              <div class="team-social">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+            <div class="team-info">
+              <h3 class="team-name">Sarah Johnson</h3>
+              <span class="team-role">Head of Operations</span>
+            </div>
+          </div>
+          
+          <div class="team-card reveal stagger-3">
+            <div class="team-image">
+              <img src="../images/team-3.jpg" alt="Team Member">
+              <div class="team-social">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+            <div class="team-info">
+              <h3 class="team-name">Mike Williams</h3>
+              <span class="team-role">Lead Developer</span>
+            </div>
+          </div>
+          
+          <div class="team-card reveal stagger-4">
+            <div class="team-image">
+              <img src="../images/team-4.jpg" alt="Team Member">
+              <div class="team-social">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+            <div class="team-info">
+              <h3 class="team-name">Emily Davis</h3>
+              <span class="team-role">Marketing Director</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section class="mission-vision section">
+      <div class="container">
+        <div class="mv-grid">
+          <div class="mv-card reveal-left">
+            <div class="mv-icon">
+              <i class="fas fa-bullseye"></i>
+            </div>
+            <h3 class="mv-title">Our Mission</h3>
+            <p class="mv-text">
+              To create the most immersive and competitive gaming experience for players worldwide. We strive to build a platform where talent meets opportunity, and where every gamer can achieve their full potential.
+            </p>
+            <ul class="mv-list">
+              <li><i class="fas fa-check"></i> Foster competitive gaming excellence</li>
+              <li><i class="fas fa-check"></i> Build inclusive gaming communities</li>
+              <li><i class="fas fa-check"></i> Drive innovation in esports technology</li>
+            </ul>
+          </div>
+          
+          <div class="mv-card reveal-right">
+            <div class="mv-icon">
+              <i class="fas fa-eye"></i>
+            </div>
+            <h3 class="mv-title">Our Vision</h3>
+            <p class="mv-text">
+              To become the global leader in esports entertainment, recognized for our commitment to fair play, innovation, and community building. We envision a world where gaming is celebrated as a legitimate sport.
+            </p>
+            <ul class="mv-list">
+              <li><i class="fas fa-check"></i> Global esports dominance</li>
+              <li><i class="fas fa-check"></i> Next-gen tournament experiences</li>
+              <li><i class="fas fa-check"></i> Empowering the next generation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners section">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-subtitle">Our Partners</p>
+          <h2 class="section-title">Trusted By <span class="text-gradient">Industry Leaders</span></h2>
+        </div>
+        
+        <div class="partners-grid">
+          <div class="partner-logo reveal stagger-1">
+            <img src="../images/team-1.png" alt="Partner 1">
+          </div>
+          <div class="partner-logo reveal stagger-2">
+            <img src="../images/team-2.png" alt="Partner 2">
+          </div>
+          <div class="partner-logo reveal stagger-3">
+            <img src="../images/team-3.png" alt="Partner 3">
+          </div>
+          <div class="partner-logo reveal stagger-4">
+            <img src="../images/team-4.png" alt="Partner 4">
+          </div>
+          <div class="partner-logo reveal stagger-5">
+            <img src="../images/team-5.png" alt="Partner 5">
+          </div>
+          <div class="partner-logo reveal stagger-1">
+            <img src="../images/team-6.png" alt="Partner 6">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="footer-logo">
+          <img src="../images/logo_green.png" alt="Stackly Logo" class="logo-img">
+         <span class="logo-text">Stackly</span>
+         </a>
+          <p class="footer-desc">
+            Your ultimate gaming destination. We craft exciting, high-quality gaming experiences for players worldwide.
+          </p>
+          <div class="footer-social">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-column">
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="match.html" class="footer-link">Matches</a></li>
+            <li><a href="blog.html" class="footer-link">Blog</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4 class="footer-title">Services</h4>
+          <ul class="footer-links">
+            <li><a href="service.html" class="footer-link">Tournaments</a></li>
+            <li><a href="service.html" class="footer-link">Coaching</a></li>
+            <li><a href="service.html" class="footer-link">Streaming</a></li>
+            <li><a href="service.html" class="footer-link">Team Management</a></li>
+            <li><a href="service.html" class="footer-link">Sponsorship</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4 class="footer-title">Support</h4>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">Help Center</a></li>
+            <li><a href="#" class="footer-link">FAQs</a></li>
+            <li><a href="#" class="footer-link">Terms of Service</a></li>
+            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+            <li><a href="contact.html" class="footer-link">Support Ticket</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2026 Stackly GAMING. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/particles.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/animations.js"></script>
+</body>
+</html>

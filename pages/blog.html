@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Stackly GAMING</title>
+  <meta name="description" content="Latest gaming news and updates from Stackly GAMING.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/pages.css">
+</head>
+<body>
+  <div class="particles-container">
+    <canvas id="particles-canvas"></canvas>
+  </div>
+
+  <nav class="navbar" id="navbar">
+    <div class="navbar-container">
+      <a href="../index.html" class="logo">
+      <img src="../images/logo_green.png" alt="Stackly Logo" class="logo-img">
+      <span class="logo-text">Stackly</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="match.html" class="nav-link">Matches</a></li>
+        <li><a href="service.html" class="nav-link">Services</a></li>
+        <li><a href="blog.html" class="nav-link active">Blog</a></li>
+        <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn-outline btn-sm">Login</a>
+        <button class="mobile-menu-btn" id="mobile-menu-btn">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="page-header">
+      <div class="page-header-bg"></div>
+      <div class="container">
+        <div class="page-header-content reveal">
+          <h1 class="page-title">Gaming <span class="text-gradient">Blog</span></h1>
+          <nav class="breadcrumb">
+            <a href="../index.html">Home</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>Blog</span>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="blog-categories reveal">
+          <button class="category-btn active">All</button>
+          <button class="category-btn">Esports</button>
+          <button class="category-btn">Gaming</button>
+          <button class="category-btn">Technology</button>
+          <button class="category-btn">Reviews</button>
+          <button class="category-btn">Guides</button>
+        </div>
+
+        <div class="blog-layout">
+          <div class="blog-main">
+            <article class="featured-post reveal">
+              <div class="featured-post-image">
+                <img src="../images/blog-featured.jpg" alt="Featured Post">
+              </div>
+              <div class="featured-post-content">
+                <span class="featured-badge">Featured</span>
+                <h2 class="featured-post-title">The Future of Esports: What to Expect in 2026</h2>
+                <p class="featured-post-excerpt">As we dive deeper into 2026, the esports industry continues to evolve at an unprecedented pace. From new game releases to innovative tournament formats, discover what's shaping the future of competitive gaming.</p>
+                <a href="#" class="btn btn-primary">Read Full Article <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </article>
+
+            <div class="blog-grid">
+              <article class="blog-card reveal stagger-1">
+                <div class="blog-image">
+                  <img src="../images/blog-1.jpg" alt="Blog 1">
+                  <span class="blog-category">Esports</span>
+                </div>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <span><i class="fas fa-calendar"></i> Mar 10, 2026</span>
+                    <span><i class="fas fa-user"></i> Admin</span>
+                  </div>
+                  <h3 class="blog-title">The Rise of Mobile Esports in 2026</h3>
+                  <p class="blog-excerpt">Mobile gaming has taken the esports world by storm. Discover how mobile tournaments are reshaping competitive gaming...</p>
+                  <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </article>
+
+              <article class="blog-card reveal stagger-2">
+                <div class="blog-image">
+                  <img src="../images/blog-2.jpg" alt="Blog 2">
+                  <span class="blog-category">Gaming</span>
+                </div>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <span><i class="fas fa-calendar"></i> Mar 8, 2026</span>
+                    <span><i class="fas fa-user"></i> Admin</span>
+                  </div>
+                  <h3 class="blog-title">Top 10 Gaming Setup Tips for Pro Players</h3>
+                  <p class="blog-excerpt">Optimize your gaming environment with these professional tips that can give you the competitive edge...</p>
+                  <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </article>
+
+              <article class="blog-card reveal stagger-3">
+                <div class="blog-image">
+                  <img src="../images/blog-3.jpg" alt="Blog 3">
+                  <span class="blog-category">Technology</span>
+                </div>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <span><i class="fas fa-calendar"></i> Mar 5, 2026</span>
+                    <span><i class="fas fa-user"></i> Admin</span>
+                  </div>
+                  <h3 class="blog-title">VR Gaming: The Future is Here</h3>
+                  <p class="blog-excerpt">Virtual Reality is transforming how we experience games. Explore the latest VR technologies...</p>
+                  <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </article>
+
+              <article class="blog-card reveal stagger-1">
+                <div class="blog-image">
+                  <img src="../images/blog-4.jpg" alt="Blog 4">
+                  <span class="blog-category">Reviews</span>
+                </div>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <span><i class="fas fa-calendar"></i> Mar 3, 2026</span>
+                    <span><i class="fas fa-user"></i> Admin</span>
+                  </div>
+                  <h3 class="blog-title">Best Gaming Mice of 2026 Reviewed</h3>
+                  <p class="blog-excerpt">We tested the top gaming mice on the market. Find out which one deserves a spot on your desk...</p>
+                  <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </article>
+
+              <article class="blog-card reveal stagger-2">
+                <div class="blog-image">
+                  <img src="../images/blog-5.jpg" alt="Blog 5">
+                  <span class="blog-category">Guides</span>
+                </div>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <span><i class="fas fa-calendar"></i> Mar 1, 2026</span>
+                    <span><i class="fas fa-user"></i> Admin</span>
+                  </div>
+                  <h3 class="blog-title">How to Build a Pro Gaming PC</h3>
+                  <p class="blog-excerpt">A comprehensive guide to building your dream gaming rig without breaking the bank...</p>
+                  <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </article>
+
+              <article class="blog-card reveal stagger-3">
+                <div class="blog-image">
+                  <img src="../images/blog-6.jpg" alt="Blog 6">
+                  <span class="blog-category">Esports</span>
+                </div>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <span><i class="fas fa-calendar"></i> Feb 28, 2026</span>
+                    <span><i class="fas fa-user"></i> Admin</span>
+                  </div>
+                  <h3 class="blog-title">Championship Finals Recap</h3>
+                  <p class="blog-excerpt">Relive the most intense moments from last weekend's championship finals...</p>
+                  <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </article>
+            </div>
+
+            <div class="text-center mt-4 reveal">
+              <button class="btn btn-outline btn-lg">Load More Posts</button>
+            </div>
+          </div>
+
+          <aside class="blog-sidebar">
+            <div class="sidebar-widget reveal">
+              <h3 class="widget-title">Popular Posts</h3>
+              <div class="popular-post">
+                <div class="popular-post-image">
+                  <img src="../images/blog-1.jpg" alt="Popular">
+                </div>
+                <div class="popular-post-info">
+                  <h4>The Rise of Mobile Esports</h4>
+                  <span>Mar 10, 2026</span>
+                </div>
+              </div>
+              <div class="popular-post">
+                <div class="popular-post-image">
+                  <img src="../images/blog-2.jpg" alt="Popular">
+                </div>
+                <div class="popular-post-info">
+                  <h4>Top 10 Gaming Setup Tips</h4>
+                  <span>Mar 8, 2026</span>
+                </div>
+              </div>
+              <div class="popular-post">
+                <div class="popular-post-image">
+                  <img src="../images/blog-3.jpg" alt="Popular">
+                </div>
+                <div class="popular-post-info">
+                  <h4>VR Gaming: The Future</h4>
+                  <span>Mar 5, 2026</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar-widget reveal">
+              <h3 class="widget-title">Tags</h3>
+              <div class="tag-cloud">
+                <a href="#" class="tag">Esports</a>
+                <a href="#" class="tag">Gaming</a>
+                <a href="#" class="tag">Technology</a>
+                <a href="#" class="tag">Reviews</a>
+                <a href="#" class="tag">Guides</a>
+                <a href="#" class="tag">PC</a>
+                <a href="#" class="tag">Console</a>
+                <a href="#" class="tag">Mobile</a>
+                <a href="#" class="tag">VR</a>
+              </div>
+            </div>
+
+            <div class="sidebar-widget reveal">
+              <h3 class="widget-title">Newsletter</h3>
+              <p style="color: var(--text-secondary); margin-bottom: 1rem;">Subscribe to get the latest gaming news delivered to your inbox.</p>
+              <form class="newsletter-form">
+                <div class="form-group">
+                  <input type="email" class="form-input" placeholder="Enter your email">
+                </div>
+                <button type="submit" class="btn btn-primary w-full">Subscribe</button>
+              </form>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="footer-logo">
+          <img src="../images/logo_green.png" alt="Stackly Logo" class="logo-img">
+         <span class="logo-text">Stackly</span>
+         </a>
+          <p class="footer-desc">Your ultimate gaming destination. We craft exciting, high-quality gaming experiences for players worldwide.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="match.html" class="footer-link">Matches</a></li>
+            <li><a href="blog.html" class="footer-link">Blog</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-title">Services</h4>
+          <ul class="footer-links">
+            <li><a href="service.html" class="footer-link">Tournaments</a></li>
+            <li><a href="service.html" class="footer-link">Coaching</a></li>
+            <li><a href="service.html" class="footer-link">Streaming</a></li>
+            <li><a href="service.html" class="footer-link">Team Management</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-title">Support</h4>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">Help Center</a></li>
+            <li><a href="#" class="footer-link">FAQs</a></li>
+            <li><a href="#" class="footer-link">Terms of Service</a></li>
+            <li><a href="contact.html" class="footer-link">Support Ticket</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2026 Stackly GAMING. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/particles.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/animations.js"></script>
+</body>
+</html>

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard - Stackly GAMING</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <aside class="dashboard-sidebar">
+      <div class="sidebar-header">
+        <a href="../index.html" class="sidebar-logo">
+          <div class="logo-icon">P</div>
+          <span>Stackly</span>
+        </a>
+      </div>
+      
+      <div class="sidebar-user">
+        <div class="user-avatar" style="background: var(--accent-cyan);">JD</div>
+        <div class="user-info">
+          <h4>John Doe</h4>
+          <span>Pro Player</span>
+        </div>
+      </div>
+      
+      <nav class="sidebar-nav">
+        <div class="sidebar-nav-title">Main</div>
+        <a href="#" class="sidebar-nav-item active">
+          <i class="fas fa-home"></i>
+          <span>Dashboard</span>
+        </a>
+        <a href="#" class="sidebar-nav-item">
+          <i class="fas fa-trophy"></i>
+          <span>My Tournaments</span>
+        </a>
+        <a href="#" class="sidebar-nav-item">
+          <i class="fas fa-gamepad"></i>
+          <span>My Matches</span>
+        </a>
+        <a href="#" class="sidebar-nav-item">
+          <i class="fas fa-chart-line"></i>
+          <span>Statistics</span>
+        </a>
+        
+        <div class="sidebar-nav-title">Account</div>
+        <a href="#" class="sidebar-nav-item">
+          <i class="fas fa-user"></i>
+          <span>Profile</span>
+        </a>
+        <a href="#" class="sidebar-nav-item">
+          <i class="fas fa-cog"></i>
+          <span>Settings</span>
+        </a>
+        <a href="#" class="sidebar-nav-item">
+          <i class="fas fa-credit-card"></i>
+          <span>Subscription</span>
+        </a>
+        <a href="../pages/login.html" class="sidebar-nav-item">
+          <i class="fas fa-sign-out-alt"></i>
+          <span>Logout</span>
+        </a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="dashboard-main">
+      <header class="dashboard-header">
+        <div class="dashboard-title">
+          <h1>My Dashboard</h1>
+          <p>Welcome back, John!</p>
+        </div>
+        <div class="header-actions">
+          <button class="header-btn">
+            <i class="fas fa-bell"></i>
+            <span class="badge">2</span>
+          </button>
+          <button class="header-btn">
+            <i class="fas fa-envelope"></i>
+          </button>
+          <button class="header-btn">
+            <i class="fas fa-cog"></i>
+          </button>
+        </div>
+      </header>
+
+      <!-- Stats Cards -->
+      <div class="dashboard-stats">
+        <div class="stat-card">
+          <div class="stat-card-header">
+            <div class="stat-card-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <span class="stat-card-trend up">
+              <i class="fas fa-arrow-up"></i> 5%
+            </span>
+          </div>
+          <div class="stat-card-value">24</div>
+          <div class="stat-card-label">Tournaments Joined</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-card-header">
+            <div class="stat-card-icon" style="background: rgba(6, 182, 212, 0.2); color: var(--accent-cyan);">
+              <i class="fas fa-gamepad"></i>
+            </div>
+            <span class="stat-card-trend up">
+              <i class="fas fa-arrow-up"></i> 12%
+            </span>
+          </div>
+          <div class="stat-card-value">156</div>
+          <div class="stat-card-label">Matches Played</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-card-header">
+            <div class="stat-card-icon" style="background: rgba(139, 92, 246, 0.2); color: var(--accent-purple);">
+              <i class="fas fa-star"></i>
+            </div>
+            <span class="stat-card-trend up">
+              <i class="fas fa-arrow-up"></i> 8%
+            </span>
+          </div>
+          <div class="stat-card-value">89</div>
+          <div class="stat-card-label">Win Rate %</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-card-header">
+            <div class="stat-card-icon" style="background: rgba(236, 72, 153, 0.2); color: var(--accent-pink);">
+              <i class="fas fa-medal"></i>
+            </div>
+            <span class="stat-card-trend up">
+              <i class="fas fa-arrow-up"></i> 15%
+            </span>
+          </div>
+          <div class="stat-card-value">12</div>
+          <div class="stat-card-label">Achievements</div>
+        </div>
+      </div>
+
+      <!-- Dashboard Grid -->
+      <div class="dashboard-grid">
+        <div class="dashboard-card">
+          <div class="dashboard-card-header">
+            <h3 class="dashboard-card-title">Upcoming Matches</h3>
+            <a href="#" class="dashboard-card-action">View All</a>
+          </div>
+          <div class="upcoming-matches">
+            <div class="upcoming-match">
+              <div class="match-teams-simple">
+                <div class="team-simple">
+                  <img src="../images/team-1.png" alt="Team">
+                  <span>Team Alpha</span>
+                </div>
+                <span class="vs">VS</span>
+                <div class="team-simple">
+                  <img src="../images/team-2.png" alt="Team">
+                  <span>Team Beta</span>
+                </div>
+              </div>
+              <div class="match-details">
+                <span class="match-time"><i class="fas fa-clock"></i> Today, 3:00 PM</span>
+                <span class="match-game">Valorant</span>
+              </div>
+              <button class="btn btn-primary btn-sm">Join</button>
+            </div>
+
+            <div class="upcoming-match">
+              <div class="match-teams-simple">
+                <div class="team-simple">
+                  <img src="../images/team-3.png" alt="Team">
+                  <span>Team Gamma</span>
+                </div>
+                <span class="vs">VS</span>
+                <div class="team-simple">
+                  <img src="../images/team-4.png" alt="Team">
+                  <span>Team Delta</span>
+                </div>
+              </div>
+              <div class="match-details">
+                <span class="match-time"><i class="fas fa-clock"></i> Tomorrow, 7:00 PM</span>
+                <span class="match-game">CS:GO</span>
+              </div>
+              <button class="btn btn-outline btn-sm">Remind</button>
+            </div>
+
+            <div class="upcoming-match">
+              <div class="match-teams-simple">
+                <div class="team-simple">
+                  <img src="../images/team-5.png" alt="Team">
+                  <span>Team Echo</span>
+                </div>
+                <span class="vs">VS</span>
+                <div class="team-simple">
+                  <img src="../images/team-6.png" alt="Team">
+                  <span>Team Fox</span>
+                </div>
+              </div>
+              <div class="match-details">
+                <span class="match-time"><i class="fas fa-clock"></i> Mar 15, 5:00 PM</span>
+                <span class="match-game">Dota 2</span>
+              </div>
+              <button class="btn btn-outline btn-sm">Remind</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="dashboard-card">
+          <div class="dashboard-card-header">
+            <h3 class="dashboard-card-title">Recent Activity</h3>
+            <a href="#" class="dashboard-card-action">View All</a>
+          </div>
+          <div class="activity-list">
+            <div class="activity-item">
+              <div class="activity-icon">
+                <i class="fas fa-trophy"></i>
+              </div>
+              <div class="activity-info">
+                <h4>Won tournament match</h4>
+                <span>2 hours ago</span>
+              </div>
+            </div>
+            <div class="activity-item">
+              <div class="activity-icon" style="background: rgba(6, 182, 212, 0.2); color: var(--accent-cyan);">
+                <i class="fas fa-level-up-alt"></i>
+              </div>
+              <div class="activity-info">
+                <h4>Rank promoted to Diamond</h4>
+                <span>Yesterday</span>
+              </div>
+            </div>
+            <div class="activity-item">
+              <div class="activity-icon" style="background: rgba(139, 92, 246, 0.2); color: var(--accent-purple);">
+                <i class="fas fa-medal"></i>
+              </div>
+              <div class="activity-info">
+                <h4>Earned achievement: First Win</h4>
+                <span>2 days ago</span>
+              </div>
+            </div>
+            <div class="activity-item">
+              <div class="activity-icon" style="background: rgba(236, 72, 153, 0.2); color: var(--accent-pink);">
+                <i class="fas fa-users"></i>
+              </div>
+              <div class="activity-info">
+                <h4>Joined team: Team Alpha</h4>
+                <span>3 days ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Performance Section -->
+      <div class="dashboard-grid" style="margin-top: 1.5rem;">
+        <div class="dashboard-card">
+          <div class="dashboard-card-header">
+            <h3 class="dashboard-card-title">Performance Stats</h3>
+            <select class="form-select" style="width: auto; padding: 0.5rem 2rem 0.5rem 1rem;">
+              <option>Last 7 Days</option>
+              <option>Last 30 Days</option>
+              <option>All Time</option>
+            </select>
+          </div>
+          <div class="performance-stats">
+            <div class="perf-item">
+              <div class="perf-icon" style="background: rgba(34, 197, 94, 0.2); color: var(--success);">
+                <i class="fas fa-check-circle"></i>
+              </div>
+              <div class="perf-info">
+                <span class="perf-value">89</span>
+                <span class="perf-label">Wins</span>
+              </div>
+            </div>
+            <div class="perf-item">
+              <div class="perf-icon" style="background: rgba(239, 68, 68, 0.2); color: var(--error);">
+                <i class="fas fa-times-circle"></i>
+              </div>
+              <div class="perf-info">
+                <span class="perf-value">11</span>
+                <span class="perf-label">Losses</span>
+              </div>
+            </div>
+            <div class="perf-item">
+              <div class="perf-icon" style="background: rgba(234, 179, 8, 0.2); color: var(--warning);">
+                <i class="fas fa-handshake"></i>
+              </div>
+              <div class="perf-info">
+                <span class="perf-value">56</span>
+                <span class="perf-label">Draws</span>
+              </div>
+            </div>
+            <div class="perf-item">
+              <div class="perf-icon" style="background: rgba(6, 182, 212, 0.2); color: var(--accent-cyan);">
+                <i class="fas fa-crosshairs"></i>
+              </div>
+              <div class="perf-info">
+                <span class="perf-value">2.4</span>
+                <span class="perf-label">K/D Ratio</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dashboard-card">
+          <div class="dashboard-card-header">
+            <h3 class="dashboard-card-title">Achievements</h3>
+            <a href="#" class="dashboard-card-action">View All</a>
+          </div>
+          <div class="achievements-list">
+            <div class="achievement-item earned">
+              <div class="achievement-icon">
+                <i class="fas fa-trophy"></i>
+              </div>
+              <div class="achievement-info">
+                <h4>First Victory</h4>
+                <span>Win your first match</span>
+              </div>
+              <i class="fas fa-check-circle earned-icon"></i>
+            </div>
+            <div class="achievement-item earned">
+              <div class="achievement-icon" style="background: var(--accent-cyan);">
+                <i class="fas fa-fire"></i>
+              </div>
+              <div class="achievement-info">
+                <h4>Winning Streak</h4>
+                <span>Win 5 matches in a row</span>
+              </div>
+              <i class="fas fa-check-circle earned-icon"></i>
+            </div>
+            <div class="achievement-item earned">
+              <div class="achievement-icon" style="background: var(--accent-purple);">
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="achievement-info">
+                <h4>Rising Star</h4>
+                <span>Reach Gold rank</span>
+              </div>
+              <i class="fas fa-check-circle earned-icon"></i>
+            </div>
+            <div class="achievement-item">
+              <div class="achievement-icon" style="background: var(--surface-light);">
+                <i class="fas fa-crown"></i>
+              </div>
+              <div class="achievement-info">
+                <h4>Champion</h4>
+                <span>Win a tournament</span>
+              </div>
+              <span class="achievement-progress">0/1</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="../js/particles.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
