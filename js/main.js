@@ -34,7 +34,7 @@ function initNavbar() {
     if (currentScroll > lastScroll && currentScroll > 100) {
       navbar.style.transform = 'translateY(-100%)';
     } else {
-      navbar.style.transform = 'translateY(0)'';
+      navbar.style.transform = 'translateY(0)';
     }
     
     lastScroll = currentScroll;
