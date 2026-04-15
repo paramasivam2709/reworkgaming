@@ -804,6 +804,8 @@ ul {
 .text-left { text-align: left; }
 .text-right { text-align: right; }
 
+.mt-10 { margin-top: 4rem; }
+
 .hidden { display: none !important; }
 
 /* ========================================
